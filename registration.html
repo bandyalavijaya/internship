@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Company Directory Portal</h1>
+    </header>
+
+    <!-- Employee Registration Form -->
+    <section id="registration-form">
+        <h2>Employee Registration</h2>
+        <form id="employeeForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="HR">HR</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Marketing">Marketing</option>
+            </select><br>
+
+            <label for="employeeId">Employee ID:</label>
+            <input type="number" id="employeeId" name="employeeId" required><br>
+
+            <label for="profilePic">Profile Picture URL:</label>
+            <input type="url" id="profilePic" name="profilePic"><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Employee List Section -->
+    <section id="employee-list">
+        <h2>Employee List</h2>
+        <ol id="employeeList">
+            <!-- List of employees will appear here -->
+        </ol>
+    </section>
+
+    <!-- Employee Details Table -->
+    <section id="employee-details">
+        <h2>Employee Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody">
+                <!-- Employee details will appear here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Embedded Google Map -->
+    <section id="map">
+        <h2>Company Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30445.12093099374!2d78.35721786703836!3d17.476930889213996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sinnomatics!5e0!3m2!1sen!2sin!4v1727704178735!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
